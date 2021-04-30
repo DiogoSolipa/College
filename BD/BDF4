@@ -1,0 +1,28 @@
+b)	Indique os nomes dos autores do livro com o t´ıtulo ’Historia do Cerco de Lisboa’.
+
+select NomeA
+from autor1, livro, autoria
+where titulo like 'Historia do Cerco de Lisboa' and autor1.coda=autoria.coda and livro.isbn=autoria.isbn;
+
+c)	Indique os nomes dos autores que tˆem exemplares na biblioteca de Evora.
+
+select distinct nomea
+from autoria, exemplar, biblioteca, autor1
+where Cidade like 'Evora' and biblioteca.idbib=exemplar.idbib and exemplar.isbn=autoria.isbn and autoria.coda=autor1.coda;
+
+(d)	Quais os t´ıtulos dos livros que n˜ao tˆem nenhum exemplar na biblioteca de Evora? 
+
+select distinct titulo
+from livro
+except
+
+select distinct titulo
+from exemplar, biblioteca, livro
+where Cidade like 'Evora' and biblioteca.idbib=exemplar.idbib and exemplar.isbn=livro.isbn;
+
+Quantos exemplares tem a biblioteca de beja?
+
+
+select count(idLivro)
+from exemplar, biblioteca
+where cidade like 'Beja' and exemplar.idBib = biblioteca.idBib;

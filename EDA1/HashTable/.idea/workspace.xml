@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e2073b4-94a7-4af9-9ccc-dc6c5756b14e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Uu7rRjGBvjUcDYQzjthAdVAPgZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Trabalho EDA" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="QuadHashTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuadHashTable" />
+      <module name="HashTable" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QuadHashTable" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e2073b4-94a7-4af9-9ccc-dc6c5756b14e" name="Default Changelist" comment="" />
+      <created>1576194824291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576194824291</updated>
+      <workItem from="1576194827702" duration="3012000" />
+      <workItem from="1576252546143" duration="6927000" />
+      <workItem from="1576535421465" duration="1482000" />
+      <workItem from="1576695238878" duration="36000" />
+      <workItem from="1576695355955" duration="149000" />
+      <workItem from="1576942624480" duration="106000" />
+      <workItem from="1576954543993" duration="2714000" />
+      <workItem from="1577036187104" duration="37000" />
+      <workItem from="1577195962812" duration="23000" />
+      <workItem from="1588773718396" duration="1611000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="310" width="424" height="480" key="FileChooserDialogImpl" timestamp="1588776420235">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="743" y="310" width="424" height="480" key="FileChooserDialogImpl/0.25.1920.1055@0.25.1920.1055" timestamp="1588776420235" />
+  </component>
+</project>

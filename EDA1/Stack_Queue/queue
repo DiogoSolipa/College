@@ -1,0 +1,67 @@
+public class QueueArray<E>  implements Queue<E> {
+
+    private E queue[];
+    int start = 0;
+    int end = 0;
+    int dim ;
+
+
+    QueueArray(){
+        this(10);
+
+    }
+
+    QueueArray(int dim){
+        this.dim=dim;
+        queue = (E[]) new Object[dim];
+    }
+
+    public int size(){
+
+            return (dim - start + end) % dim;
+    }
+
+    private int inc(int pos){
+
+        return (pos +1) % dim;
+    }
+
+    public boolean empty(){
+
+        return start == end;
+    }
+
+    public E front(){
+
+        return queue[start];
+    }
+
+    public void enqueue(E o){
+
+        if(size() < dim -1){
+
+            queue[end] = o;
+            end = inc(end);
+        }
+    }
+
+    public E dequeue(){
+
+        if (!empty()){
+
+        E x = queue[start];
+         queue[start] = null;
+         inc(start);
+            return x;
+        }
+        return null;
+    }
+
+
+    public static void main(String[] args){
+
+        QueueArray <Integer> q = new QueueArray<>(5);
+        ArrayStack <Integer> a = new ArrayStack<>();
+
+    }
+}

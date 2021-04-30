@@ -1,0 +1,40 @@
+28.
+
+a) 
+    #define SIZE 21
+
+    struct car car {
+
+    char [SIZE] brand; //21 bytes
+    char  [SIZE] model; //21 bytes
+    short engCapacity, yearIn, yearOut; //2 bytes cada
+
+        //48 bytes
+
+    };
+
+    struct bTree bNode { // nao pode ter referencias pq esta em memoria secundaria
+
+        short ocupation; // 2 bytes
+        struct car elements [2 * t - 1]; // 48 * (2t -1 ) bytes
+        // 2 bytes alinhamento
+        int bNode [2 * t]; // 4 * 2t
+        bool isLeaf; // 1 byte
+        // 3 bytes alinhamento
+    };
+
+    otimizar struct anterior:
+
+    struct bTree bNode { // nao pode ter referencias pq esta em memoria secundaria
+
+        struct car elements [2 * t - 1]; // 48 * (2t -1 ) bytes
+        int bNode [2 * t]; // 4 * 2t
+        short ocupation; // 2 bytes
+        bool isLeaf; // 1 byte
+        // 1 byte alinhamento
+    };
+
+    sizeof - > 2 + 48 (2t -1) + 4 + 2t + 1 + 2 + 3 <= 4096 //relativo 1 struct bNode
+
+b)
+2 + 48 (2t - 1) + 4(2t) + 3 + 2 <= 4096 -->t <= 39.77 -- > t = 39 --> 4016 bytes

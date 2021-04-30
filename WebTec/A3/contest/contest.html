@@ -1,0 +1,84 @@
+<!DOCTYPE html >
+<html>
+<head>
+   <title>Contest Entry Form</title>
+   <style type="text/css">
+      ol, ul { 
+     list-style-type: none;
+      }
+
+      .info {margin: 10px;}
+
+      #date {margin-top: 30px;}
+
+      textarea {
+        resize: none;
+      }
+   </style>
+</head>
+
+<body>
+
+<fieldset>
+
+<h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+
+<p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one of ten lucky winners.</p>
+
+<form action="database.txt" method="POST">
+
+<p>Contest Entry Information</p>
+
+<ul>
+  <div class="info">
+    <li>Name:<input name="name" type="text"></li><br> 
+    <li>Email Address:<input name="email" type="text"></li><br>
+    <li>Phone:<input name="phone" type="text"></li><br>
+    <li>My shoes are SO old…</li><textarea name="text_box" rows="4" cols="60" maxlength="300"></textarea><br>
+    <li>Date of Birth: <input id="date" name="date" type="date"></li>
+  </div>
+</ul>
+<h2>Design your custom Forcefields:</h2>
+
+<p>Custom Shoe Design</p>
+
+<p>Color <em>(choose one)</em>:</p>
+  <ul>
+  <li>Red<input name="color" type="radio" value="red"></li>
+  <li>Blue<input name="color" type="radio" value="blue"></li>
+  <li>Black<input name="color" type="radio" value="black"></li>
+  <li>Silver<input name="color" type="radio" value="silver"></li>
+  </ul>
+
+<p>Features <em>(Choose as many as you want)</em></p>
+  <ul>
+  <li>Sparkley laces<input name="features" type="checkbox" value="s_laces"></li>
+  <li>Metallic logo<input name="features" type="checkbox" value="m_logo" checked></li>
+  <li>Light-up heels<input name="features" type="checkbox" value="l_heels"></li>
+  <li>MP3-enabled<input name="features" type="checkbox" value="mp3_enabled"></li>
+  </ul>
+
+<p>Size
+  <p>Sizes reflect standard men's sizes:    
+  <select name="shoe_size">
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+  </select>
+  </p>
+</p>
+
+<p>Choose desired Color: <input  type="color"></p>
+
+<input type="submit" value="PIMP MA SHOES!!!">
+<input type="reset" value="Reset">
+
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,7 @@
+-Abrir diretorio pasta
+-git checkout -b branch
+-git status
+-git add . (ou pasta especifica)
+-git commit -m "descricao"
+-git push origin Solipa
+

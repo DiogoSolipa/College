@@ -1,0 +1,60 @@
+Exs ASC 2 Ficha 1:
+
+6.
+a) 0 1 ( 2 valores)
+b) 8 "normalmente"
+c)4 | 8
+d) 1024 
+e) identificador de variáveis em memória
+f) 2⁴ B
+g) 2⁸ B
+h) 2¹⁶ B | 64 KiB
+i) 2¹⁶ B | 4194304 KiB | 4 GiB
+j) 2⁶⁴ B | 17,2x10⁹ GiB | 16,7x10⁶ TiB | 16384 PiB | 16 EiB
+
+7.
+a) 32
+b) 32 , 32
+c) 
+	i) inválido
+	ii) válido
+	iii) válido 
+	iv) inválido
+	v) inválido 
+
+d) 0100 --> 1 digito --- > primeiro multiplo de 4 que é maior que a word do 1 digito do numero dado 
+
+e) 16³ ( 16 possibiliaddes para cada digito) | 16³ B/ 4 B ( 1 WORD ->32 bits --> 4 B = 1024 B
+
+
+
+8.
+
+
+add $sp, $sp, -4
+sw $v0, $v0, 
+
+addi $t0, $t0, 0
+addi $v0, $v0, 0
+
+bne $t0, $a0, L
+nop
+
+addi $v0, $zero, 1 
+
+jr $ra
+nop
+
+L:
+	addi $a0, $a0, -1	
+	
+	jal odd
+	
+		
+
+
+
+	
+	
+
+

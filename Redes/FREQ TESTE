@@ -1,0 +1,70 @@
+REDES FREQ TESTE
+
+1.
+
+1 - getaddrinfo("meuservidor.pt", "9999" , NULL, &p);
+2- sockfd = socket(AF_INET, SOCK_STREAM, 0);
+3 - connect(sockfd, p->ai_addr, p->ai_addrlen);
+4 - numbytes=recv(sockfd, buf, MAXDATASIZE-1, 0);
+5 - printf("Os dados recebidos são: %s \n",buf);
+
+2.
+
+A-F
+B-F
+C-F
+D-V
+
+3.
+
+a)
+E=1/(1+5,4 Tx D / (c F))
+
+Tx -> 100Mb/s -> 100*10⁶ bps
+D -> 300 m
+F -> 1080 bits
+
+E= (1 / (1 + 5.4 * 100*10⁶ * 300/ 3*10⁸ * 1080)) * 100% = 67% -> 2/3
+
+b)
+
+1Gb -> Fx bits
+
+Fx / Tx => 1*10⁹ bits/ 1*10⁸ bits = 10 segundos / eficiência = 15 segundos
+
+4.
+
+Tempo ou atraso de propagação = D / C => 2 * 3000 / 3*10⁸ = 2*10^-5 (dimensão mínima da frame)
+
+para ter os bits -> 2*10^-5 / 100*10⁶ = 2*10^-13 bits
+
+
+5.
+
+A-F
+B-V
+C-F
+D-F
+
+6.
+
+Papel
+
+7.
+
+A-F
+B-F
+C-V
+
+8.
+
+papel
+
+9.
+
+A-F
+B-F
+C-F
+D-V
+
+

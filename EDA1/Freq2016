@@ -1,0 +1,58 @@
+2.
+public boolean contains ( Type x ){
+
+	SingleNode<Type> node;
+	node = header.getNext();
+	Type ele;
+
+	while(node != null){
+
+		if(ele == x) return true;
+		
+		node = node.getNext();
+	
+	}
+	
+	return false;
+}
+
+
+3.
+
+Class MyDoubleListIterator<T>{
+
+
+DoubeNode<T> current;
+DoubleNode<T> header;
+DoubleNode<T> end;
+
+public boolean hasPrevious(){
+	
+		return previous != null;
+		
+	}
+	
+
+public T previous(){
+
+	ListIterator<T> it = new ListIterator<>();
+	DoubleNode<T> node;
+	node = end;
+	
+	while( node != current){
+	
+		node = it.nextPrev();
+	}
+
+	return node.prev();
+
+}
+
+
+public void remove(){
+
+	
+
+}
+
+}

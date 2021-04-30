@@ -1,0 +1,68 @@
+#1 - nslookup
+
+193.136.216.21
+
+#2 - ping
+
+64 bytes from 193.136.216.21: icmp_seq=1 ttl=61 time=8.55 ms
+64 bytes from 193.136.216.21: icmp_seq=2 ttl=61 time=7.49 ms
+64 bytes from 193.136.216.21: icmp_seq=3 ttl=61 time=8.74 ms
+64 bytes from 193.136.216.21: icmp_seq=4 ttl=61 time=6.67 ms
+64 bytes from 193.136.216.21: icmp_seq=5 ttl=61 time=8.14 ms
+--
+
+#3 - ping
+
+--- arachne.uevora.pt ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3046ms
+rtt min/avg/max/mdev = 7.229/1261.075/2701.470/1023.303 ms, pipe 3
+
+Using average ---> Network Latency = 1261.075 ms
+
+#4 - ping
+
+--- www.google.com ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5007ms
+rtt min/avg/max/mdev = 18.631/19.621/20.608/0.850 ms
+
+Using average ---> Network Latency = 19.621 ms
+
+#5 - tracepath
+A)
+
+1?: [LOCALHOST]                      pmtu 1500
+ 1:  _gateway                                            3133.658ms 
+ 1:  _gateway                                            2133.404ms 
+ 1:  _gateway                                            1132.716ms 
+ 1:  _gateway                                            132.075ms 
+ 2:  10.2.0.254                                            9.259ms 
+ 3:  router-ac.bkb.uevora.pt                               7.334ms asymm  4 
+ 4:  arachne.uevora.pt                                     6.266ms reached
+     Resume: pmtu 1500 hops 4 back 4
+
+B)
+
+1?: [LOCALHOST]                      pmtu 1500
+ 1:  _gateway                                              3.348ms 
+ 1:  _gateway                                              3.289ms 
+ 2:  10.2.0.254                                            8.812ms 
+ 3:  router-ac.bkb.uevora.pt                             254.855ms asymm  4 
+ 4:  router-world-n1.uevora.pt                             8.127ms 
+ 5:  router-world-n1.uevora.pt                           188.314ms reached
+     Resume: pmtu 1500 hops 5 back 4
+
+C)
+
+1?: [LOCALHOST]                      pmtu 1500
+ 1:  _gateway                                              3.306ms 
+ 1:  _gateway                                              3.223ms 
+ 2:  10.2.0.254                                            7.396ms 
+ 3:  router-ac.bkb.uevora.pt                               8.991ms asymm  4 
+ 4:  router-world-n1.uevora.pt                             7.052ms 
+ 5:  router-world-n1.uevora.pt                             7.798ms reached
+     Resume: pmtu 1500 hops 5 back 4
+
+--------------------------------
+Diogo Pais Solipa
+
+

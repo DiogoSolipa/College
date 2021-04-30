@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      function aleatorios() {}
+
+      function pares(x) {
+        let arr = [];
+        for (let xi of x) {
+          if (xi % 2 === 0) arr.push(xi);
+        }
+      }
+
+      function main() {
+        let consola = document.getElementById("test");
+        consola.innerHTML = pares([1, 2, 3, 4, 5, 6]);
+      }
+    </script>
+  </head>
+
+  <body onload="main();"></body>
+  <p id="test"></p>
+</html>
